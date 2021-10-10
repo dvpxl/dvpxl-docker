@@ -13,9 +13,15 @@ REPOSITORY    TAG         IMAGE ID       CREATED          SIZE
 dvpxl         my-example  595861477de2   14 seconds ago   90.6MB
 ```
 
+# run 
+docker run -it dvpxl/my-example cmd
+
 # port mapping
 docker run -p80:3000 dvpxl/my-example
 container exposes 80 maps to container's 3000
 
 # volume mapping
 docker run -it -v $(pwd):/container/path
+
+# remove all images
+sudo docker images prune -a

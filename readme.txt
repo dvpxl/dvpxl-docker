@@ -31,3 +31,9 @@ sudo docker images prune -a
 
 # remove all images and relinquish space (will relinqiush space)
 sudo docker system prune
+
+# start a stopped container
+sudo docker start container_id
+
+# list all containers
+sudo docker ps -a

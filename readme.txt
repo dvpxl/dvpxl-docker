@@ -26,15 +26,8 @@ container exposes 80 maps to container's 3000
 # volume mapping
 docker run -it -v $(pwd):/container/path
 
-# remove all images (this still did not relinquish space)
+# remove all images (this still did not relinquish space), see next.
 sudo docker images prune -a
 
-# remove all images and relinquish space
+# remove all images and relinquish space (will relinqiush space)
 sudo docker system prune
-```
-WARNING! This will remove:
-  - all stopped containers
-  - all networks not used by at least one container
-  - all dangling images
-  - all dangling build cache
-```

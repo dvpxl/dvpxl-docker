@@ -37,3 +37,7 @@ sudo docker start container_id
 
 # list all containers
 sudo docker ps -a
+
+# commit already running container
+docker commit container_id
+
